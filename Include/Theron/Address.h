@@ -302,6 +302,18 @@ public:
     }
 
     /**
+    \brief Validation operator.
+
+    Returns true if current address is not null.
+
+    \return True if the given address is not null.
+    */
+    THERON_FORCEINLINE operator bool () const
+    {
+        return *this != Null();
+    }
+
+    /**
     \brief Less-than operator.
 
     This allows addresses to be sorted, for example in containers.
