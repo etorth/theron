@@ -2009,9 +2009,11 @@ private:
         Theron::uint32_t mSize;
         Theron::Address mAddress;
     };
-
+    
+public:
     typedef std::vector<Theron::uint32_t> IntVectorMessage;
 
+private:
     class SomeOtherBaseclass
     {
     public:
